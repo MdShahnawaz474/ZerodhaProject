@@ -2,6 +2,8 @@ import React from 'react'
 
 export const Hero = () => {
   return (
-    <div>Hero</div>
+    <div className='mt-5 content'>
+
+    </div>
   )
 }

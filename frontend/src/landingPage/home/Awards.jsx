@@ -81,7 +81,7 @@ const Award = () => {
             <Link  style={{textDecoration:"none"}} to="/product">
               Explore our products 
             </Link>
-            <Link  style={{textDecoration:"none"}} >Try Kite demo </Link>
+            <Link  to="/" style={{textDecoration:"none"}} >Try Kite demo </Link>
           </div>
         </div>
       </div>

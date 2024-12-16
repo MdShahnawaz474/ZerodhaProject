@@ -26,14 +26,14 @@ const Navbar = () => {
           padding: "0 30px",
         }}
       >
-        <div>
+        <div><Link to="/">
           <img
             style={{
               height: "17px",
             }}
             src={zerodha_Logo}
             alt="Logo"
-          />
+          /></Link>
         </div>
 
         <div
@@ -49,7 +49,7 @@ const Navbar = () => {
           <Link to="/about" style={{ textDecoration: "none", color: "inherit" }}>
             About
           </Link>
-          <Link to="/products" style={{ textDecoration: "none", color: "inherit" }}>
+          <Link to="/product" style={{ textDecoration: "none", color: "inherit" }}>
             Products
           </Link>
           <Link to="/pricing" style={{ textDecoration: "none", color: "inherit" }}>

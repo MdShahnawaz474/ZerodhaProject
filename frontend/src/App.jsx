@@ -1,16 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Homepage from './landingPage/home/Homepage'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Homepage from "./landingPage/home/Homepage";
+import Signup from "./landingPage/signup/Signup";
+import AboutPage from "./landingPage/about/AboutPage";
+import Products from "./landingPage/products/Products";
+import Pricing from "./landingPage/home/Pricing";
+import Support from "./landingPage/support/Support";
+import Navbar from "./landingPage/Navbar";
+import Footer from "./landingPage/Footer";
+import "./App.css";
+import NotFound from "./NotFound";
+import ProductPage from "./landingPage/products/ProductPage";
 
 function App() {
-
   return (
     <>
-    <Homepage/>
+      <Navbar />
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/product" element={<ProductPage />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/support" element={<Support />} />
+          <Route path="*" element={<NotFound/>} />
+        
+        </Routes>
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

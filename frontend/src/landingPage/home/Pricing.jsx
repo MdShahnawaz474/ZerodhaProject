@@ -12,7 +12,7 @@ const Pricing = () => {
         We pioneered the concept of discount broking and price transparency in India. Flat fees and no hidden charges.
         </p>
         <div style={{color: '#387ed1', fontWeight:"500"}}>
-        <Link style={{textDecoration:"none", }} to="/product">  See pricing </Link>
+        <Link style={{textDecoration:"none", }} to="/pricing">  See pricing </Link>
             </div>
       </div>
 

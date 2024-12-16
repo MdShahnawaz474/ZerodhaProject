@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Education = () => {
   return (
     <div
-      className="mt-4 container"
+      className="mt-4 mb-5 container"
       style={{ width: "100%", margin: "0 auto  " }}
     >
       <div>
