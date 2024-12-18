@@ -4,7 +4,7 @@ import Signup from "./landingPage/signup/Signup";
 import AboutPage from "./landingPage/about/AboutPage";
 import Products from "./landingPage/products/Products";
 import Pricing from "./landingPage/home/Pricing";
-import Support from "./landingPage/support/Support";
+import SupportPage from "./landingPage/support/SupportPage";
 import Navbar from "./landingPage/Navbar";
 import Footer from "./landingPage/Footer";
 import "./App.css";
@@ -21,7 +21,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/product" element={<ProductPage />} />
           <Route path="/pricing" element={<Pricing />} />
-          <Route path="/support" element={<Support />} />
+          <Route path="/support" element={<SupportPage />} />
           <Route path="*" element={<NotFound/>} />
         
         </Routes>

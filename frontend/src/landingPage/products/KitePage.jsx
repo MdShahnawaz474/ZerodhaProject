@@ -1,13 +1,15 @@
 import React from 'react'
 import kite_product from "../../assets/images/products-kite.png"
+
 import { Link } from 'react-router-dom'
 
 import console_product from "../../assets/images/products-console.png"
+import BadgeIcons from './BadgeIcons'
 const KitePage = () => {
   return (
     <div className='container '
     style={{ maxWidth: "75%", margin: "0 auto"} }>
-        <div className='row'>
+        <div className='mt-5 row'>
             <div className='col-7 mt-2'>
                 <img src={kite_product} alt='products-kite'/>
             </div>
@@ -28,6 +30,8 @@ const KitePage = () => {
 
                     <div className='col-6'><Link style={{color:"#387ed1", fontWeight:500, textDecoration:"none"}} to={"/"}>Learn more</Link></div>
                 </div>
+              <BadgeIcons/>
+                
             </div>
         </div>
 
@@ -40,7 +44,7 @@ const KitePage = () => {
             lineHeight:"1.5rem", 
             marginBottom:"12px",
             marginTop:"220px",
-            marginBottom:"10px"
+           
         }}>Console</h2>
         <p style={{
             marginTop:"20px"
